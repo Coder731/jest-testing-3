@@ -5,7 +5,7 @@
 const buttonClick = require("../button");
 
 beforeAll(() => {
-    let fs = require("fs");
+    let fs = require("fs"); //file system handling module built into Node allows open read and write files
     let fileContents = fs.readFileSync("index.html", "utf-8");
     document.open();
     document.write(fileContents);
